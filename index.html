@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="رسالة صغيرة مخبّية في ظرف، مستنية تاريخ حكايتكم."
+    />
+    <meta name="theme-color" content="#f5eee7" />
+    <title>حكايتنا في ظرف</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="celebration-layer" id="celebration-layer" aria-hidden="true"></div>
+    <main class="page">
+      <div class="ambient ambient--one" aria-hidden="true"></div>
+      <div class="ambient ambient--two" aria-hidden="true"></div>
+
+      <header class="topbar">
+        <a class="wordmark" href="#" aria-label="حكايتنا في ظرف">
+          <span class="wordmark__icon" aria-hidden="true">♡</span>
+          <span>حكايتنا في ظرف</span>
+        </a>
+        <span class="topbar__note">رسالة صغيرة، من قلب كبير</span>
+      </header>
+
+      <section class="love-note" aria-labelledby="page-title">
+        <div class="intro">
+          <p class="eyebrow"><span aria-hidden="true">✦</span> ليكي إنتِ وبس</p>
+          <h1 id="page-title">فاكرة اليوم<br />اللي <span>ابتدت فيه</span> حكايتنا؟</h1>
+          <p class="intro__copy">
+            اكتبي تاريخ أول لقاء بينا، يمكن الذكرى الحلوة دي تفتحلك حاجة أحلى.
+          </p>
+        </div>
+
+        <div class="letter-stage">
+          <div class="envelope" id="envelope" aria-hidden="true">
+            <div class="envelope__letter">
+              <span class="letter-preview__heart">♡</span>
+              <span>رسالة ليكي</span>
+              <span class="letter-preview__line"></span>
+            </div>
+            <div class="envelope__back"></div>
+            <div class="envelope__flap"></div>
+            <div class="envelope__front"></div>
+            <div class="envelope__seal">♡</div>
+          </div>
+          <span class="stage-caption" id="stage-caption">مستخبية جوّه الظرف</span>
+        </div>
+
+        <form class="date-form" id="date-form" novalidate>
+          <label for="meeting-date">تاريخ أول مرة اتقابلنا</label>
+          <div class="date-form__controls">
+            <input
+              id="meeting-date"
+              name="meeting-date"
+              type="date"
+              autocomplete="off"
+              aria-describedby="date-hint form-message"
+              required
+            />
+            <button type="submit">
+              <span>افتحي رسالتك</span>
+              <span class="button-heart" aria-hidden="true">♡</span>
+            </button>
+          </div>
+          <p class="date-form__hint" id="date-hint">تلميح: اليوم اللي بقى من أجمل أيامنا</p>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+
+        <article class="message-card" id="message-card" aria-labelledby="message-title" hidden>
+          <div class="message-card__ornament" aria-hidden="true">✦　♡　✦</div>
+          <p class="message-card__eyebrow">❣️To my sweetheart❣️</p>
+          <h2 id="message-title">11 - 11 - 2026. الــــ11:11ــاعه</h2>
+          <p class="message-card__body" id="message-body"></p>
+          <p class="message-card__signoff">
+            💗 عشقتك منذ البداية ، وسأبقى أحبك حتى النهاية 💗
+          </p>
+          <button class="replay-button" id="replay-button" type="button">اقفلي الرسالة</button>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <span>متعملتش من ورق… بس فيها كل اللي في قلبي</span>
+        <span class="footer__sparkle" aria-hidden="true">✧</span>
+      </footer>
+    </main>
+  </body>
+</html>
